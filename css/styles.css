@@ -1,0 +1,246 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    color: #000;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #52057B;
+}
+
+.logo {
+    height: 60px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.productos {
+    flex: 3;
+}
+
+.productos h1 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.productos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #5D04D9;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #52057B;
+}
+
+.card-container--info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.card-container--value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.product-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.delete-icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    filter: invert(1);
+}
+
+.delete-icon:hover {
+    transform: scale(1.2);
+}
+
+.agregar-producto {
+    flex: 1;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.agregar-producto h1 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#formulario-agregar input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #52057B;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#formulario-agregar input:focus {
+    border-color: #3A0B8D;
+    outline: none;
+}
+
+.btn-enviar, .btn-limpiar {
+    width: calc(50% - 10px);
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-enviar {
+    background: #52057B;
+    color: #FFF;
+    margin-right: 10px;
+}
+
+.btn-enviar:hover {
+    background: #3A0B8D;
+    transform: translateY(-3px);
+}
+
+.btn-limpiar {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.btn-limpiar:hover {
+    background: #c5c5c5;
+    transform: translateY(-3px);
+}
+
+.footer {
+    background-color: #52057B;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 40px;
+    border-top: 2px solid #3A0B8D;
+}
+
+.footer img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Estilos para Pantallas Pequeñas (Ancho Máximo de 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .productos {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .agregar-producto {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .header, .footer {
+        text-align: center;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+}
+
+/* Estilos para Pantallas Medianas (Ancho entre 768px y 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .productos {
+        width: 65%;
+    }
+
+    .agregar-producto {
+        width: 30%;
+    }
+
+    .card {
+        width: calc(50% - 15px);
+    }
+}

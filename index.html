@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="assets/logo.png" alt="AluraGeek Logo" class="logo">
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Product Section -->
+        <section class="productos">
+            <h1>Mis Productos</h1>
+            <div class="productos-lista" id="productos-lista">
+                <!-- Los productos serán renderizados aquí por JavaScript -->
+            </div>
+        </section>
+
+        <!-- Formulario para Agregar Producto -->
+        <section class="agregar-producto">
+            <h1>Agregar Producto</h1>
+            <form id="formulario-agregar">
+                <input type="text" id="nombre" placeholder="nombre..." required>
+                <input type="text" id="precio" placeholder="precio..." required>
+                <input type="text" id="imagen" placeholder="imagen..." required>
+                <button type="submit" class="btn-enviar">Enviar</button>
+                <button type="reset" class="btn-limpiar">Limpiar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="assets/footer.png" alt="AluraGeek Logo" class="logo">
+        <p>Desarrollado por Juan Jose Trujillo Cardozo</p>
+        <p>ALURA LATAM - 2024</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

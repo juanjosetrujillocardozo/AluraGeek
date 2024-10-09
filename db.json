@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "nombre": "Captain America",
+      "precio": "10",
+      "imagen": "https://mifunko.com/img/cms/funko-pop-vaulted.jpg",
+      "id": "1"
+    },
+    {
+      "id": "3573",
+      "nombre": "Goku",
+      "precio": "123",
+      "imagen": "https://toogeek.co/wp-content/uploads/2021/03/889698544603.jpg"
+    },
+    {
+      "id": "fc6b",
+      "nombre": "Joker",
+      "precio": "12323",
+      "imagen": "https://toogeek.co/wp-content/uploads/2021/07/889698558150.jpg"
+    }
+  ]
+}
